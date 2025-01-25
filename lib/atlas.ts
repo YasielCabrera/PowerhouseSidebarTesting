@@ -10,6 +10,8 @@ interface InputNode {
     id: string;
     title: Title;
     ancestorSlugSuffixes: string[];
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    content: any;
 }
 
 interface TreeNode {
@@ -18,13 +20,14 @@ interface TreeNode {
     childrens: TreeNode[];
 }
 
-export async function getAtlasData() {
+export async function getAtlasData(): Promise<Record<string, InputNode>> {
   const atlasResponse = await fetch('https://sky-atlas.powerhouse.io/api/view-node-tree')
   const atlasData = await atlasResponse.json()
   return atlasData
 }
 
-export function generateSidebarTree(input: Record<string, InputNode>): TreeNode[] {
+export async function getSidebarTree(): Promise<TreeNode[]> {
+    const input = await getAtlasData();
     const nodesById: Record<string, TreeNode> = {};
     const tree: TreeNode[] = [];
 
@@ -53,4 +56,16 @@ export function generateSidebarTree(input: Record<string, InputNode>): TreeNode[
     }
 
     return tree;
+}
+
+export async function getAtlasNode(paramId: string) {
+    const id = paramId || "4281ab93-ef4f-4974-988d-7dad149a693d";
+    const atlasResponse = await getAtlasData();
+    for (const [, value] of Object.entries(atlasResponse)) {
+        if (value.id === id) {
+            return value;
+        }
+    }
+
+    return null;
 }
