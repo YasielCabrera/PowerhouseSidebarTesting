@@ -941,13 +941,13 @@
   dependencies:
     "@microsoft/api-extractor" "^7.48.1"
 
-"@powerhousedao/design-system@1.18.0-canary.37":
-  version "1.18.0-canary.37"
-  resolved "https://registry.yarnpkg.com/@powerhousedao/design-system/-/design-system-1.18.0-canary.37.tgz#9ccb07eb6b3a6192cde0c67ba848c9e14a2b327e"
-  integrity sha512-9+LKipxGIzpv+ToPj+ArhtzM7rH1mE5gK0w5lDJQE6qECp3V9jW5XaXbhzHHteDiu3P8WK8VXSQdeWMiOJZqew==
+"@powerhousedao/design-system@1.18.0-canary.41":
+  version "1.18.0-canary.41"
+  resolved "https://registry.yarnpkg.com/@powerhousedao/design-system/-/design-system-1.18.0-canary.41.tgz#0084ffdb269d2c15e1d3f05795ce1961000f7863"
+  integrity sha512-n5fWvoE+KB8dv2GPGX2pe+SRsqrsDtEdlt6VsU6hz1BKVTlzI3rxmxOvzWaMeUxqNaI/oZ6jWN+/yiDABBcXzQ==
   dependencies:
     "@internationalized/date" "^3.5.6"
-    "@powerhousedao/scalars" "1.16.0-canary.37"
+    "@powerhousedao/scalars" "1.16.0-canary.41"
     "@radix-ui/react-checkbox" "^1.1.2"
     "@radix-ui/react-dialog" "^1.1.2"
     "@radix-ui/react-dropdown-menu" "^2.1.2"
@@ -985,10 +985,10 @@
     world-countries "^5.0.0"
     zod "^3.23.8"
 
-"@powerhousedao/scalars@1.16.0-canary.37":
-  version "1.16.0-canary.37"
-  resolved "https://registry.yarnpkg.com/@powerhousedao/scalars/-/scalars-1.16.0-canary.37.tgz#69138580c9649a31af17b1a92f903337662613a1"
-  integrity sha512-KmrqJZwFmiCMBeDY3t5quuZXZA34Tlr24fRC+OMyt/Vw65kD0wUEWU2twQbebYQ12hgspsyiRA+sGzVYOj6vZw==
+"@powerhousedao/scalars@1.16.0-canary.41":
+  version "1.16.0-canary.41"
+  resolved "https://registry.yarnpkg.com/@powerhousedao/scalars/-/scalars-1.16.0-canary.41.tgz#bd47c65f71dcb2d469f76ce256b9d559185e5fca"
+  integrity sha512-VEXMplM0nwo2AeEE2wZ+e3BflL2G+A5/+WaaTJF8Gz/zpJbULIpd0XdvLDrwKCR20AVTPTC/YWTyUeqrTa2kMA==
 
 "@radix-ui/primitive@1.1.1":
   version "1.1.1"
