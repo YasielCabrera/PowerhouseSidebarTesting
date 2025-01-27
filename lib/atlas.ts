@@ -12,6 +12,7 @@ interface InputNode {
     ancestorSlugSuffixes: string[];
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     content: any;
+    type: string;
 }
 
 interface TreeNode {
