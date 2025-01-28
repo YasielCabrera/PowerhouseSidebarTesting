@@ -12,8 +12,8 @@ importers:
         specifier: ^1.7.0
         version: 1.7.0(@types/node@20.17.14)
       '@powerhousedao/design-system':
-        specifier: 1.18.0-canary.43
-        version: 1.18.0-canary.43(@tanstack/query-core@5.64.2)(@types/react-dom@19.0.3(@types/react@19.0.7))(@types/react@19.0.7)(bufferutil@4.0.9)(graphql@16.10.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(tailwindcss@3.4.17)(typescript@5.7.3)(utf-8-validate@5.0.10)
+        specifier: 1.18.0-canary.47
+        version: 1.18.0-canary.47(@tanstack/query-core@5.64.2)(@types/react-dom@19.0.3(@types/react@19.0.7))(@types/react@19.0.7)(bufferutil@4.0.9)(graphql@16.10.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(tailwindcss@3.4.17)(typescript@5.7.3)(utf-8-validate@5.0.10)
       next:
         specifier: 15.1.5
         version: 15.1.5(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
@@ -600,14 +600,14 @@ packages:
   '@powerhousedao/config@1.7.0':
     resolution: {integrity: sha512-6L5qxy14BetAQ88PPZpn3rwu8ZmcC0HLR3XxS4mYIJ4vnEkLw6EM4cAaqc/vtwbaLrhD49PZfRJa35JMtcsrhA==}
 
-  '@powerhousedao/design-system@1.18.0-canary.43':
-    resolution: {integrity: sha512-wBQMZgB38HtZWEX9Caep79OkPSnGNpqvDr8lFYUP2KuwzZXpUxLDXevNsX1udfz0j2hweGrCp9WTZ/zevqiGLg==}
+  '@powerhousedao/design-system@1.18.0-canary.47':
+    resolution: {integrity: sha512-GUAFu+vxx1uymjxyBxeahnVlUACf4xqW+S2hQAIquAbXCcM9U87Mb7kYlsT+tXRuKVZXh2WeRtt+RSwD5Wft1w==}
     peerDependencies:
       react: ^18.3.1
       react-dom: ^18.3.1
 
-  '@powerhousedao/scalars@1.16.0-canary.43':
-    resolution: {integrity: sha512-jOUT9D7ybqamtUljqTi0SjgC5QvlifBNH/HE1d5L/dDVyPIRl5lqV70kP8ZkkW0yfNXWTg0lpLOeSxYLSB4TYA==}
+  '@powerhousedao/scalars@1.16.0-canary.47':
+    resolution: {integrity: sha512-Y+AbFquG9UTdmkeqVgl8UZvVju8uFtWh20o820pMr/9UFJCRW7ufy0apAU7OzVIn8cH5vsmo20nMkSf7sILnGA==}
     peerDependencies:
       graphql: ^16.9.0
       zod: ^3.23.8
@@ -4351,10 +4351,10 @@ snapshots:
     transitivePeerDependencies:
       - '@types/node'
 
-  '@powerhousedao/design-system@1.18.0-canary.43(@tanstack/query-core@5.64.2)(@types/react-dom@19.0.3(@types/react@19.0.7))(@types/react@19.0.7)(bufferutil@4.0.9)(graphql@16.10.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(tailwindcss@3.4.17)(typescript@5.7.3)(utf-8-validate@5.0.10)':
+  '@powerhousedao/design-system@1.18.0-canary.47(@tanstack/query-core@5.64.2)(@types/react-dom@19.0.3(@types/react@19.0.7))(@types/react@19.0.7)(bufferutil@4.0.9)(graphql@16.10.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(tailwindcss@3.4.17)(typescript@5.7.3)(utf-8-validate@5.0.10)':
     dependencies:
       '@internationalized/date': 3.7.0
-      '@powerhousedao/scalars': 1.16.0-canary.43(graphql@16.10.0)(zod@3.24.1)
+      '@powerhousedao/scalars': 1.16.0-canary.47(graphql@16.10.0)(zod@3.24.1)
       '@radix-ui/react-checkbox': 1.1.3(@types/react-dom@19.0.3(@types/react@19.0.7))(@types/react@19.0.7)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       '@radix-ui/react-dialog': 1.1.4(@types/react-dom@19.0.3(@types/react@19.0.7))(@types/react@19.0.7)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       '@radix-ui/react-dropdown-menu': 2.1.4(@types/react-dom@19.0.3(@types/react@19.0.7))(@types/react@19.0.7)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
@@ -4424,7 +4424,7 @@ snapshots:
       - uploadthing
       - utf-8-validate
 
-  '@powerhousedao/scalars@1.16.0-canary.43(graphql@16.10.0)(zod@3.24.1)':
+  '@powerhousedao/scalars@1.16.0-canary.47(graphql@16.10.0)(zod@3.24.1)':
     dependencies:
       graphql: 16.10.0
       zod: 3.24.1

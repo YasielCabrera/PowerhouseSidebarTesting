@@ -18,7 +18,7 @@ interface InputNode {
 interface TreeNode {
     id: string;
     title: string;
-    childrens: TreeNode[];
+    children: TreeNode[];
 }
 
 export async function getAtlasData(): Promise<Record<string, InputNode>> {
@@ -36,7 +36,7 @@ export async function getSidebarTree(): Promise<TreeNode[]> {
     for (const [key, value] of Object.entries(input)) {
         const { id, title } = value;
         const titleString = `${title.formalId.prefix}.${title.formalId.numberPath.join('.')} - ${title.title}`;
-        nodesById[key] = { id, title: titleString, childrens: [] };
+        nodesById[key] = { id, title: titleString, children: [] };
     }
 
     // Build the tree
@@ -51,7 +51,7 @@ export async function getSidebarTree(): Promise<TreeNode[]> {
             // Attach to the last ancestor in the path
             const parentKey = ancestors[ancestors.length - 1];
             if (nodesById[parentKey]) {
-                nodesById[parentKey].childrens.push(currentNode);
+                nodesById[parentKey].children.push(currentNode);
             }
         }
     }

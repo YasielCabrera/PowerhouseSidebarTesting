@@ -5,6 +5,7 @@ import { getSidebarTree } from "@/lib/atlas";
 import AtlasSidebar from "@/components/atlas-sidebar";
 
 import '@powerhousedao/design-system/style.css'
+import { ThemeSwitcher } from "@/components/theme-switcher";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,12 +32,13 @@ export default async function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased dark:bg-slate-900`}
       >
         <SidebarProvider nodes={nodes}>
           <div className="flex h-svh w-full">
             <AtlasSidebar />
-            <main className="flex-1 w-full h-screen overflow-auto p-5" style={{ width: "calc(100% - var(--sidebar-width))" }}>
+            <main className="flex-1 w-full h-screen overflow-auto p-4" style={{ width: "calc(100% - var(--sidebar-width))" }}>
+              <ThemeSwitcher />
               {children}
             </main>
           </div>
